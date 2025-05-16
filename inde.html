@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billie Eilish Fan Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5em;
+            color: #39FF14;
+            text-transform: uppercase;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #39FF14;
+        }
+
+        #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://via.placeholder.com/1920x1080?text=Billie+Eilish') center/cover;
+            position: relative;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        #hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 5em;
+            color: #39FF14;
+            z-index: 1;
+            animation: fadeInDown 1s ease-in;
+        }
+
+        #hero p {
+            font-size: 1.5em;
+            color: #fff;
+            z-index: 1;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in 0.5s;
+        }
+
+        section {
+            padding: 80px 50px;
+            min-height: 100vh;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3em;
+            color: #39FF14;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        #about, #concerts, #fans, #social {
+            background: #111;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+        }
+
+        #fans .post-form {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #fans .post-form input, #fans .post-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+        }
+
+        #fans .post-form button {
+            background: #39FF14;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #fans .post-form button:hover {
+            background: #fff;
+        }
+
+        #fans .posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+       }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Billie Eilish</div>
+            <nav>
+                <a href="#hero">Inicio</a>
+                <a href="#about">Sobre Billie</a>
+                <a href="#concerts">Conciertos</a>
+                <a href="#fans">Fans</a>
+                <a href="#social">Redes</a>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h1 class="animate__animated animate__fadeInDown">Billie Eilish Fan Page</h1>
+            <p class="animate__animated animate__fadeInUp">Únete a la comunidad de fans de Billie Eilish</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Billie Eilish</h2>
+            <p>Billie Eilish Pirate Baird O'Connell, nacida el 18 de diciembre de 2001, es una cantante y compositora estadounidense que saltó a la fama con su sencillo "Ocean Eyes" en 2015. Con su hermano Finneas, ha creado música que combina pop, electropop y elementos alternativos, ganando múltiples Grammys. Su estilo único, con colores neón y ropa oversized, la ha convertido en un ícono de la moda. Billie tiene dos perros, Shark y Pepper, y es conocida por su activismo en temas como el cambio climático y los derechos de las mujeres.</p>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300x200?text=Billie+Concierto" alt="Concierto">
+                <img src="https://via.placeholder.com/300x200?text=Billie+Mascota" alt="Mascota">
+                <img src="https://via.placeholder.com/300x200?text=Billie+Moda" alt="Moda">
+            </div>
+        </section>
+
+        <section id="concerts">
+            <h2>Conciertos</h2>
+            <p>Billie ha encabezado festivales como Coachella y realizado giras mundiales. Algunos de sus conciertos destacados:</p>
+            <ul>
+                <li>Happier Than Ever Tour (2022)</li>
+                <li>Coachella (2019, 2022)</li>
+                <li>Hit Me Hard and Soft Listening Party (2024)</li>
+            </ul>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300x200?text=Coachella" alt="Coachella">
+                <img src="https://via.placeholder.com/300x200?text=Tour" alt="Tour">
+            </div>
+        </section>
+
+        <section id="fans">
+            <h2>Comunidad de Fans</h2>
+            <div class="post-form">
+                <input type="text" id="post-title" placeholder="Título de tu publicación">
+                <textarea id="post-content" placeholder="Comparte algo sobre Billie..."></textarea>
+                <input type="text" id="post-media" placeholder="URL de imagen o video de YouTube">
+                <button onclick="addPost()">Publicar</button>
+            </div>
+            <div class="posts" id="posts"></div>
+        </section>
+
+        <section id="social">
+            <h2>Redes Sociales</h2>
+            <div class="gallery">
+                <a href="https://www.instagram.com/billieeilish" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.tiktok.com/@billieeilish" target="_blank"><i class="fab fa-tiktok fa-3x"></i></a>
+                <a href="https://twitter.com/billieeilish" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.youtube.com/@BillieEilish" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+            </div>
+        </section>
+
+        <script>
+            // Animaciones con ScrollReveal
+            ScrollReveal().reveal('section', { delay: 200 }}});
+            ScrollReveal().reveal('.gallery img', { delay: 300, interval: 100 });
+
+            // Funcionalidad para agregar publicaciones
+            function addPost() {
+                const title = document.getElementById('post-title').value;
+                const content = document.getElementById('post-content').value;
+                const media = document.getElementById('post-media').value;
+
+                if (title && content) {
+                    const post = document.createElement('div');
+                    post.className = 'post';
+                    post.innerHTML = `
+                        <h3>${title}</h3>
+                        <p>${content}</p>
+                        ${media.includes('youtube') ? `<iframe width="100%" height="200" src="${media.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe>` : media ? `<img src="${media}" alt="Fan Media">` : ''}
+                    `;
+                    document.getElementById('posts').prepend(post);
+                    savePost({ title, content, media });
+                    document.getElementById('post-title').value = '';
+                    document.getElementById('post-content').value = '';
+                    document.getElementById('post-media').value = '';
+                }
+            }
+
+            // Guardar publicaciones en localStorage
+            function savePost(post) {
+                let posts = JSON.parse(localStorage.getItem('posts')) || [];
+                posts.push(post);
+                localStorage.setItem('posts', JSON.stringify(posts));
+            }
+
+            // Cargar publicaciones guardadas
+            function loadPosts() {
+                let posts = JSON.parse(localStorage.getItem('posts')) || [];
+                posts.forEach(post Perspective({ title, content, media }) => {
+                    const post = document.createElement('div');
+                    post.className = 'post';
+                    post.innerHTML = `
+                        <h3>${title}</h3>
+                        <p>${content}</p>
+                        ${media.includes('youtube') ? `<iframe width="100%" height="200" src="${media.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe>` : media ? `<img src="${media}" alt="Fan Media">` : ''}
+                    `;
+                    document.getElementById('posts').prepend(post);
+                });
+            }
+
+            // Cargar publicaciones al iniciar
+            loadPosts();
+        </script>
+    </body>
+</html>
